@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Ball from './Ball';
+// import Ball from './Ball';
 import Lottery from './Lottery';
 import './App.css';
 
