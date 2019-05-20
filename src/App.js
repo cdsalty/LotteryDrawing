@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Ball from './Ball';
+import Lottery from './Lottery';
 import './App.css';
 
 
@@ -8,9 +9,7 @@ class App extends Component {
     return(
       <div className = "App">
         {/* <Ball />  This will render a blank ball but for used for sanity-check check purposes */}
-        <Ball num = {11} />
-        <Ball num = {22} />
-        <Ball num = {14} />
+        <Lottery />
       </div>
     );
   }
