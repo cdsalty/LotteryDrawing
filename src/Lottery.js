@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Ball from './Ball';
+import './Lottery.css'
 
 /*
 Logic Ahead
@@ -33,14 +34,12 @@ class Lottery extends Component {
         // maxBalls will determine how may balls/numbers to render.
             // create an array and then add them to this.state under 'nums:'
         // take the logic from getting a random number, place it inside .map() and assign to this.setState.
-        // MUST REMEMBER TO USE THIS.PROPS.MAXNUMBER
         this.setState(currentState => ({
           nums: currentState.nums.map(
               n => Math.ceil(Math.random() * this.props.maxNumber)
           )
         }));
     }
-
     handleClick() {
         this.generateNumbers(); // MUST INVOKE () & NOT this.generateNumbers and no paranthesis. 
     }

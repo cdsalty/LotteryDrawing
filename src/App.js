@@ -10,6 +10,7 @@ class App extends Component {
       <div className = "App">
         {/* <Ball />  This will render a blank ball but for used for sanity-check check purposes */}
         <Lottery />
+        <Lottery title="Mid-Day Drawing" maxNumber={10} maxBalls={4} />
       </div>
     );
   }
